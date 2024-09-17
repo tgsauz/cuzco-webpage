@@ -21,7 +21,6 @@ function Navbar() {
                     <li><a>Inicio</a></li>
                     <li><a>Acerca de</a></li>
                     <li><a>Contacto</a></li>
-                    <li><a>Extra</a></li>
                 </ul>
             </section>
         </>

@@ -1,3 +1,7 @@
+:root {
+    --navbar-height: 7.5vh;
+}
+
 .icon {
     height: 3rem;
     width: 3rem;
@@ -16,7 +20,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 7.5vh;
+    height: var(--navbar-height);
     width: 100%;
     z-index: 100;
     border: 0.1rem solid rgba(109, 109, 109, 0.2);
