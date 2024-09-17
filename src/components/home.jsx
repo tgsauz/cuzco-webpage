@@ -1,4 +1,5 @@
 import '../styles/home.css'
+import ImageCarousel from './imagecarousel.jsx'
 import GoogleMap from './map'
 
 function Home() {
@@ -21,7 +22,7 @@ function Home() {
                                 <img className='intro-img' src='/placeholder3.jpg'/>
                                 <div className='intro-text'>
                                     <h3>Todas nuestras salas cuentan con equipo 'state of the art' y salas con acustica de grado A</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste assumenda, magni, repudiandae dolores accusamus soluta placeat nostrum reprehenderit laborum minima doloremque quod corrupti sunt odio a distinctio odit rem. Beatae.</p>
+                                    <p>Nuestra misión es poner al alcance de artistas independientes de todo nivel  las instalaciones, el equipamiento y el conocimiento para lograr un producto musical de alta calidad. </p>
                                 </div>
                             </div>
                         <div className='galeria'>
@@ -30,12 +31,9 @@ function Home() {
                                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum excepturi unde alias minima deleniti optio. Esse placeat dolor dolorum, sequi tenetur, accusamus eius natus necessitatibus, alias fuga laboriosam non dolorem!</p>
 
                                 </section>
-                                <div className='flecha_boton left'><p>{'<'}</p></div>
-                                <section className='card'>
-                                    <img className='img-card' src='/placeholder1.jpg'/>
-                                    <img className='img-card' src='/placeholder2.jpg'/>
-                                </section>
-                                <div className='flecha_boton right'><p>{'>'}</p></div>
+                                <div className='section-card'>
+                                    <ImageCarousel/>
+                                </div>
                             </div>
                     </section>
                 </section>
