@@ -16,7 +16,7 @@ function Navbar() {
     return (
         <>
             <section className="navbar section">
-                <img className='icon' src='/iconocuzco.jpg'/>
+                <img className='icon' src='/icon/iconocuzco.jpg'/>
                 <ul>
                     <li><a>Inicio</a></li>
                     <li><a>Acerca de</a></li>

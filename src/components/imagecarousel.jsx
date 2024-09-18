@@ -4,10 +4,12 @@ import React, { useState } from "react";
 const ImageCarousel = () => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const images = [
-        "/salaa.jpg",
-        "/placeholder1.jpg",
-        "/placeholder2.jpg",
-        "/placeholder3.jpg",
+        "/imagecarousel/salaa.jpg",
+        "/imagecarousel/salab.jpg",
+        "/imagecarousel/salac.jpg",
+        "/imagecarousel/salaz.jpg",
+        "/imagecarousel/salaestudio.jpg",
+        "/imagecarousel/estudio.jpg",
     ];
 
     const handleNext = () => {
