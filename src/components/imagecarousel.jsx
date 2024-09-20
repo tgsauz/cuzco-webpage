@@ -29,7 +29,6 @@ const ImageCarousel = () => {
         </button>
         <div
           className="carousel-inner"
-          style={{ transform: `translateX(${currentImageIndex * -100}%)` }}
         >
           {images.map((image, index) => (
             <div 
