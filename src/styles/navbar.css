@@ -12,18 +12,18 @@
 
 .navbar {
     position: absolute;
+    width: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(109, 109, 109, 0.1); /* Semi-transparent white */
+    background-color: rgba(237, 129, 23, 0.1); /* Semi-transparent white */
     backdrop-filter: blur(10px);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     height: var(--navbar-height);
-    max-width: 99.1vw;
     z-index: 100;
-    border: 0.1rem solid rgba(109, 109, 109, 0.2);
+    border: 0.1rem solid rgba(237, 129, 23, 0.2);
     box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1), 0 0.1rem 0.3rem rgba(0, 0, 0, 0.8);
 }
 

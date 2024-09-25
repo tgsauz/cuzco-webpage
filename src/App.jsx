@@ -1,13 +1,12 @@
 import './App.css'
 import Home from './components/home.jsx'
-import About from './components/about.jsx'
 import Navbar from './components/navbar.jsx'
 
 function App() {
 
   return (
     <>
-      <div className='container'>
+      <div className="App">
         <Navbar />
         <Home />
       </div>
