@@ -1,0 +1,21 @@
+.masonry-gallery {
+  height: inherit;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  overflow: hidden;
+  -ms-overfloy-style: none;
+}
+.masonry-gallery::-webkit-scrollbar {
+  display: none;
+}
+.masonry-item {
+    width: 12.5rem;
+    height: 12.5rem;
+}

@@ -1,12 +1,12 @@
 import '../styles/home.css'
 import GoogleMap from './map'
-
+import MasonryGallery from './masonry'
 function Home() {
 
     return (
         <div className='home'>
-            <img className='img-home' src='/background/bg01.jpg'/>
             <section className='inicio'>
+                <img className='img-home' src='/background/bg01.jpg'/>  
                 <section className='contentwrapper'>
                     <img className='img-logo' src='/icon/elcuzcologo.jpg'/>
                     <h2>ESTUDIO DE GRABACIÓN, PRODUCCION Y SALAS DE ENSAYO</h2>
@@ -18,27 +18,64 @@ function Home() {
                 <section className='contentwrapper'>
                     <div className='intro'>
                         <div className='intro-text'>
-                            <h3>Todas nuestras salas cuentan con equipo 'state of the art' y salas con acustica de grado A</h3>
+                            <h3>Todas nuestras salas cuentan con equipo 'state of the art' y acustica de grado A</h3>
                             <p>Nuestra misión es poner al alcance de artistas independientes de todo nivel  las instalaciones, el equipamiento y el conocimiento para lograr un producto musical de alta calidad. </p>
                         </div>
                     </div>
                     <div className='galeria'>
                         <div className='firstrow'>
-                            <img src='/images/salaa.jpg'/>
-                            <img src='/images/salab.jpg'/>
-                            <img src='/images/salac.jpg'/>
+                            <div className='img-container'>
+                                <div className='text-container'>
+                                    <h3>Sala A</h3>
+                                    <p>Capacidad hasta 12 personas.</p>
+                                </div>
+                                <img src='/images/salaa.jpg' alt='sala a'/>
+                            </div>
+                            <div className='img-container'>
+                                <div className='text-container'>
+                                    <h3>Sala B</h3>
+                                    <p>Capacidad hasta 8 personas.</p>
+                                </div>
+                                <img src='/images/salab.jpg' alt='sala b'/>
+                            </div>
+                            <div className='img-container'>
+                                <div className='text-container'>
+                                    <h3>Sala C</h3>
+                                    <p>Capacidad hasta 5 personas.</p>
+                                </div>
+                                <img src='/images/salac.jpg' alt='sala c'/>
+                            </div>
                         </div>
                         <div className='secondrow'>
-                            <img src='/images/salaz.jpg'/>
-                            <img src='/images/salaestudio.jpg'/>
-                            <img src='/images/estudio.jpg'/>
+                            <div className='img-container'>
+                                <div className='text-container'>
+                                    <h3>Sala Z</h3>
+                                    <p>Capacidad hasta 5 personas.</p>
+                                </div>
+                                <img src='/images/salaz.jpg' alt='sala z'/>
+                            </div>
+                            <div className='img-container'>
+                                <div className='text-container'>
+                                    <h3>Sala de grabacion</h3>
+                                    <p></p>
+                                </div>
+                                <img src='/images/salaestudio.jpg' alt='sala de estudio'/>
+                            </div>
+                            <div className='img-container'>
+                                <div className='text-container'>
+                                    <h3>Estudio</h3>
+                                    <p></p>
+                                </div>
+                                <img src='/images/estudio.jpg' alt='estudio'/>
+                            </div>
                         </div>
                     </div>
                 </section>
             </section>
             <section className='albums'>
                 <div className='contentwrapper'>
-                    <h1>ALBUMES GRABADOS EN NUESTRO TEMPLO</h1>
+                    <h1>Discos realizados en el cuzco</h1>
+                    <MasonryGallery />
                 </div>
             </section>
             <section className='contact'>

@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 #root {
@@ -8,6 +9,22 @@
   width: 100%;
 }
 
-.card {
-  padding: 2em;
+@font-face {
+  font-family: 'Novecentowide-Normal';
+  src: url('./styles/Fonts/Novecentowide-Normal.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Novecentowide-Bold';
+  src: url('./styles/Fonts/Novecentowide-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Novecentowide-Light';
+  src: url('./styles/Fonts/Novecentowide-Light.otf') format('opentype');
+  font-weight: light;
+  font-style: normal;
 }
