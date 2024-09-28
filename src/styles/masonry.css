@@ -9,7 +9,6 @@
   align-self: center;
   overflow-y: scroll;
   scrollbar-width: none;
-  overflow: hidden;
   -ms-overfloy-style: none;
 }
 .masonry-gallery::-webkit-scrollbar {
