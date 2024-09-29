@@ -9,17 +9,40 @@ function Home() {
                 <img className='img-home' src='/background/bg01.jpg'/>  
                 <section className='contentwrapper'>
                     <img className='img-logo' src='/icon/elcuzcologo.jpg'/>
-                    <h2>ESTUDIO DE GRABACIÓN, PRODUCCION Y SALAS DE ENSAYO</h2>
-                    <button>Contacto</button>
+                    <div className='home-text'>
+                        <h1>Lleva tu música al próximo nivel</h1>
+                        <h2>En El Cuzco Estudio, te ayudamos a hacer que tu música suene increíble</h2>
+                    </div>
+                    <button onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}>Contáctanos</button>
+                </section>
+            </section>
+            <section className='info'>
+                <section className='contentwrapper'>
+                    <div className='acercade'>
+                        <h2>Sobre El Cuzco Estudio</h2>
+                        <p>Somos un espacio dedicado a la grabación y producción musical, con un ambiente cómodo y profesional donde los artistas pueden dar rienda suelta a su creatividad.</p>
+                    </div>
+                    <div className='services'>
+                        <h4>Nuestros servicios:</h4>
+                        <ul>
+                            <li><h5>Grabación Completa:</h5><p>Demos, singles, EPs, discos.</p></li>
+                            <li><h5>Trabajos Parciales:</h5><p>Tomas de baterías, grabación sobre pistas, re-amps, etc.</p></li>
+                            <li><h5>Mezcla y Masterización:</h5><p>Servicio disponible tanto presencial como online.</p></li>
+                            <li><h5>Salas de Ensayo:</h5><p>Alquiler por hora, con equipamiento completo.</p></li>
+                            <li><h5>Alquiler de Instrumentos y Venta de Insumos</h5><p>Púas, palillos de batería, tapones para oído, pilas, etc.</p></li>
+                            <li><h5>Grabación en Vivo:</h5><p>Sala con capacidad para 50 personas para shows en vivo.</p></li>
+                        </ul>
+                    </div>
                 </section>
             </section>
             <section className='about'>
-                <img className='img-about' src='/background/bg02.jpg'/>
                 <section className='contentwrapper'>
                     <div className='intro'>
                         <div className='intro-text'>
-                            <h3>Todas nuestras salas cuentan con equipo 'state of the art' y acustica de grado A</h3>
-                            <p>Nuestra misión es poner al alcance de artistas independientes de todo nivel  las instalaciones, el equipamiento y el conocimiento para lograr un producto musical de alta calidad. </p>
+                            <div>
+                                <h3>Todas nuestras salas cuentan con equipo 'state of the art' y acustica de grado A</h3>
+                                <p>Nuestra misión es poner al alcance de artistas independientes de todo nivel  las instalaciones, el equipamiento y el conocimiento para lograr un producto musical de alta calidad. </p>
+                            </div>
                         </div>
                     </div>
                     <div className='galeria'>
@@ -104,6 +127,7 @@ function Home() {
                         <span>
                             <h3>Contacto:</h3>
                             <p>+54 9 11 2635-2412</p>
+                            <p>info@elcuzcoestudio.com</p>
 
                         </span>
                     </div>
