@@ -73,14 +73,7 @@
 }
 .info{
     border-top: 5px dotted rgba(109, 109, 109, 0.25);
-    background-color: rgb(0, 31, 50);
-}
-.info{
-    background:
-    radial-gradient(100% 100% at 100% 0,var(--c1) 4%,var(--_g),#0008 96%,#0000),
-    radial-gradient(100% 100% at 0 100%,#0000, #0008 4%,var(--_g),var(--c1) 96%)
-    var(--c1);
-  background-size: var(--s) var(--s);
+    background-color: rgba(110, 71, 75, 0.5);
 }
 .info .contentwrapper {
     display: flex;
@@ -144,14 +137,7 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    background-color: rgba(0, 31, 50);
-}
-.about{
-    background:
-    radial-gradient(100% 100% at 100% 0,var(--c1) 4%,var(--_g),#0008 96%,#0000),
-    radial-gradient(100% 100% at 0 100%,#0000, #0008 4%,var(--_g),var(--c1) 96%)
-    var(--c1);
-  background-size: var(--s) var(--s);
+    background-color: rgb(98, 71, 110, 0.2);
 }
 .about > .contentwrapper{
     justify-content: space-evenly;
@@ -266,13 +252,7 @@
     align-items: center;
     border-top: 5px dotted rgba(109, 109, 109, 0.25);
     border-bottom: 5px dotted rgba(109, 109, 109, 0.25);
-}
-.albums {
-    background:
-    radial-gradient(100% 100% at 100% 0,var(--c1) 4%,var(--_g),#0008 96%,#0000),
-    radial-gradient(100% 100% at 0 100%,#0000, #0008 4%,var(--_g),var(--c1) 96%)
-    var(--c1);
-  background-size: var(--s) var(--s);
+    background-color: rgba(45, 51, 43, 0.8);
 }
 
 .albums h1 {
