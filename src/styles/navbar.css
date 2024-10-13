@@ -1,0 +1,67 @@
+:root {
+    --navbar-height: 7.5vh;
+}
+
+.icon {
+    height: 3rem;
+    width: 3rem;
+    padding: 1.5em;
+    rotate: 0deg;
+    transition: rotate 0.5s ease;
+}
+
+.navbar {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(237, 129, 23, 0.1); /* Semi-transparent white */
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--navbar-height);
+    z-index: 100;
+    border: 0.1rem solid rgba(237, 129, 23, 0.2);
+    box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1), 0 0.1rem 0.3rem rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    padding-right: 1rem;
+}
+
+.navbar ul a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.25rem;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.navbar ul a:hover{
+    border-bottom: 2px solid white;
+}
+
+.navbar ul li a.active{
+    border-bottom: 2px solid white;
+}
+
+.navbar .icon:hover {
+    box-shadow: 1 1 1 1 rgba(0, 0, 0, 1);
+    rotate: 45deg;
+  }
+  
+@media (prefers-reduced-motion: no-preference) {
+a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+}
+}
