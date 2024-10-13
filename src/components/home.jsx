@@ -1,7 +1,9 @@
-import '../styles/home.css'
+import ImgContainer from './imgContainer'
 import GoogleMap from './map'
 import MasonryGallery from './masonry'
-function Home() {
+
+import '../styles/home.css'
+function Home({ onToggleMaximize }) {
 
     return (
         <div className='home'>
@@ -23,14 +25,19 @@ function Home() {
                         <p>Somos un espacio dedicado a la grabación y producción musical, con un ambiente cómodo y profesional donde los artistas pueden dar rienda suelta a su creatividad.</p>
                     </div>
                     <div className='services'>
-                        <h4>Nuestros servicios:</h4>
                         <ul>
-                            <li><h5>Grabación Completa:</h5><p>Demos, singles, EPs, discos.</p></li>
-                            <li><h5>Trabajos Parciales:</h5><p>Tomas de baterías, grabación sobre pistas, re-amps, etc.</p></li>
-                            <li><h5>Mezcla y Masterización:</h5><p>Servicio disponible tanto presencial como online.</p></li>
-                            <li><h5>Salas de Ensayo:</h5><p>Alquiler por hora, con equipamiento completo.</p></li>
-                            <li><h5>Alquiler de Instrumentos y Venta de Insumos</h5><p>Púas, palillos de batería, tapones para oído, pilas, etc.</p></li>
-                            <li><h5>Grabación en Vivo:</h5><p>Sala con capacidad para 50 personas para shows en vivo.</p></li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ec8116" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-mic"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+                                <h5>Grabación, mezcla y master:</h5><p>Demos, singles, EPs, discos, tomas de baterías, grabación sobre pistas, etc.</p>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ec8116" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-music"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
+                                <h5>Salas de Ensayo:</h5><p>Alquiler por hora, con equipamiento completo.</p>
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ec8116" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                                <h5>Venta de insumos:</h5><p>Púas, palillos de batería, tapones para oído, pilas, etc.</p>
+                            </li>
                         </ul>
                     </div>
                 </section>
@@ -46,50 +53,74 @@ function Home() {
                         </div>
                     </div>
                     <div className='galeria'>
-                        <div className='firstrow'>
-                            <div className='img-container'>
-                                <div className='text-container'>
-                                    <h3>Sala A</h3>
-                                    <p>Capacidad hasta 12 personas.</p>
-                                </div>
-                                <img src='/images/salaa.jpg' alt='sala a'/>
+                        <div className='salas'>
+                            <div className='firstrow'>
+                                <ImgContainer
+                                    title='Sala A'
+                                    text='Capacidad hasta 12 personas.'
+                                    image='/images/salaa.jpg'
+                                    maximizedImage='/images/salaa.jpg'
+                                    description=''
+                                    onToggleMaximize={onToggleMaximize}
+                                />
+                                <ImgContainer
+                                    title='Sala B'
+                                    text='Capacidad hasta 8 personas.'
+                                    image='/images/salab.jpg'
+                                    maximizedImage='/images/salab.jpg'
+                                    description=''
+                                    onToggleMaximize={onToggleMaximize}
+                                />
                             </div>
-                            <div className='img-container'>
-                                <div className='text-container'>
-                                    <h3>Sala B</h3>
-                                    <p>Capacidad hasta 8 personas.</p>
-                                </div>
-                                <img src='/images/salab.jpg' alt='sala b'/>
-                            </div>
-                            <div className='img-container'>
-                                <div className='text-container'>
-                                    <h3>Sala C</h3>
-                                    <p>Capacidad hasta 5 personas.</p>
-                                </div>
-                                <img src='/images/salac.jpg' alt='sala c'/>
+                            <div className='secondrow'>
+                                <ImgContainer
+                                    title='Sala C'
+                                    text='Capacidad hasta 5 personas.'
+                                    image='/images/salac.jpg'
+                                    maximizedImage='/images/salac.jpg'
+                                    description=''
+                                    onToggleMaximize={onToggleMaximize}
+                                />
+                                <ImgContainer
+                                    title='Sala Z'
+                                    text='Capacidad hasta 5 personas.'
+                                    image='/images/salaz.jpg'
+                                    maximizedImage='/images/salaz.jpg'
+                                    description=''
+                                    onToggleMaximize={onToggleMaximize}
+                                />
                             </div>
                         </div>
-                        <div className='secondrow'>
-                            <div className='img-container'>
-                                <div className='text-container'>
-                                    <h3>Sala Z</h3>
-                                    <p>Capacidad hasta 5 personas.</p>
-                                </div>
-                                <img src='/images/salaz.jpg' alt='sala z'/>
+                        <div className='separador'></div>
+                        <div className='estudio'>
+                            <div className='firstcolumn'>
+                                <ImgContainer
+                                    title='Sala E'
+                                    text=''
+                                    image='/images/salaestudio.jpg'
+                                    maximizedImage='/images/salaestudio.jpg'
+                                    description=''
+                                    onToggleMaximize={onToggleMaximize}
+                                />
+                                <ImgContainer
+                                    title='Estudio'
+                                    text=''
+                                    image='/images/estudio.jpg'
+                                    maximizedImage='/images/estudio.jpg'
+                                    description=''
+                                    onToggleMaximize={onToggleMaximize}
+                                />
                             </div>
-                            <div className='img-container'>
-                                <div className='text-container'>
-                                    <h3>Sala de grabacion</h3>
-                                    <p></p>
-                                </div>
-                                <img src='/images/salaestudio.jpg' alt='sala de estudio'/>
-                            </div>
-                            <div className='img-container'>
-                                <div className='text-container'>
-                                    <h3>Estudio</h3>
-                                    <p></p>
-                                </div>
-                                <img src='/images/estudio.jpg' alt='estudio'/>
+                            <div className='separador'></div>
+                            <div className='secondcolumn'>
+                                <ImgContainer
+                                    title='Sala E + Estudio'
+                                    text=''
+                                    image='/images/salaestudio.jpg'
+                                    maximizedImage='/images/salaestudio.jpg'
+                                    description=''
+                                    onToggleMaximize={onToggleMaximize}
+                                />
                             </div>
                         </div>
                     </div>
@@ -97,8 +128,12 @@ function Home() {
             </section>
             <section className='albums'>
                 <div className='contentwrapper'>
-                    <h1>Discos realizados en el cuzco</h1>
+                    <h1>Algunos discos realizados en el cuzco</h1>
                     <MasonryGallery />
+                    <div className='musiclinks'>
+                        <a className='spotifylink' href='https://open.spotify.com/playlist/557fwZiBXeokptKmBgyb9U?si=na1f0aQkSQ2xcHDlwvRbXQ&pi=Q7ZdZQiBS56F-' target='_blank' rel='noopener noreferrer'>¡Escucha nuestra playlist en spotify!</a>
+                        <a className='youtubelink' href='https://youtube.com/playlist?list=PLGdaSx2Yhf4syS6eLfPCl9GQnA8AFzntm&si=_hy1j4DGdLpc6_AG' target='_blank' rel='noopener noreferrer'>¡Mira nuestro mix de youtube!</a>
+                    </div>
                 </div>
             </section>
             <section className='contact'>
