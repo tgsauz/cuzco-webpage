@@ -1,7 +1,6 @@
 import React from 'react';
 
 const ImgContainer = ({ title, text, image, maximizedImage, description, onToggleMaximize }) => {
-    console.log(title, text, image, maximizedImage, description);
   const handleToggleMaximize = () => {
     onToggleMaximize(maximizedImage, description);
   };
@@ -9,7 +8,7 @@ const ImgContainer = ({ title, text, image, maximizedImage, description, onToggl
 
   return (
     <div className="img-container">
-        <div className='text-container'>
+        <div className='text-container' onClick={handleToggleMaximize}>
             <h3>{title}</h3>
             <p>{text}</p>
         </div>

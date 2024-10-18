@@ -13,14 +13,10 @@ function App() {
 
   const onToggleMaximize = () => {
     setIsMaximized(true);
-    console.log('Maximized Image:', maximizedImage);
-    console.log('Description:', description);
   }
 
   const handleToggleMaximize = (image, description) => {
     setIsMaximized(true);
-    console.log('HTM Maximized Image:', image);
-    console.log('HTM Description:', description);
     setMaximizedImage(image);
     setDescription(description);
   };
