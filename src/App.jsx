@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 import Home from './components/home.jsx'
 import MaximizedImage from './components/maximizedImage.jsx';
+import Navbar from './components/navbar.jsx';
+import Footer from './components/footer.jsx';
 
 import './App.css'
 
@@ -28,6 +30,7 @@ function App() {
   return (
     <>
       <div className="App">
+        <Navbar />
         <Home onToggleMaximize={handleToggleMaximize} />
         {isMaximized && (
           <MaximizedImage
@@ -36,6 +39,7 @@ function App() {
             onClose={handleClose}
           />
         )}
+        <Footer />
       </div>
     </>
   )

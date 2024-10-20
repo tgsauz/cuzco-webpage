@@ -15,9 +15,18 @@ const initialState = {
 const reducer = (state, action) => {
     switch (action.type) {
         case 'TOGGLE_SALA':
-            return { ...state, sala: !state.sala, estudio: false, activeButton: 'sala' };
+            return {
+                ...state,
+                sala: !state.sala,
+                estudio: false,
+                activeButton: state.activeButton === 'sala' ? null : 'sala'
+            };
         case 'TOGGLE_ESTUDIO':
-            return { ...state, estudio: !state.estudio, sala: false, activeButton: 'estudio' };
+            return { ...state,
+                estudio: !state.estudio,
+                sala: false,
+                activeButton: state.activeButton === 'estudio' ? null : 'estudio'
+            };
         default:
             return state;
     }
