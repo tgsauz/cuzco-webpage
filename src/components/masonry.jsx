@@ -2,14 +2,14 @@ import React, { useEffect, useRef } from 'react';
 import '../styles/masonry.css';
 
 const images = [
-    { src: '/portadas/portada01.jpg', alt: 'portada 1' },
     { src: '/portadas/portada02.jpg', alt: 'portada 2' },
+    { src: '/portadas/portada08.jpg', alt: 'portada 8' },
+    { src: '/portadas/portada01.jpg', alt: 'portada 1' },
     { src: '/portadas/portada03.jpg', alt: 'portada 3' },
     { src: '/portadas/portada04.jpg', alt: 'portada 4' },
     { src: '/portadas/portada05.jpg', alt: 'portada 5' },
     { src: '/portadas/portada06.jpg', alt: 'portada 6' },
     { src: '/portadas/portada07.jpg', alt: 'portada 7' },
-    { src: '/portadas/portada08.jpg', alt: 'portada 8' },
     { src: '/portadas/portada09.jpg', alt: 'portada 9' },
     { src: '/portadas/portada10.jpg', alt: 'portada 10' },
     { src: '/portadas/portada11.jpg', alt: 'portada 11' },
