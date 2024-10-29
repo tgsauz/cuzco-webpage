@@ -1,29 +1,65 @@
 :root {
     --navbar-height: 7.5vh;
 }
-
-.icon {
-    height: 3rem;
-    width: 3rem;
-    padding: 1.5em;
-    rotate: 0deg;
-    transition: rotate 0.5s ease;
-}
-
 .navbar {
     position: fixed;
     width: auto;
-    height: auto;
+    height: 5.5rem;
     bottom: 1.75rem;
     right: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     z-index: 100;
     box-sizing: border-box;
+    transition: all 0.2s cubic-bezier(0.1,0.4,0.2,1);
 }
-.navbar a {
+.navbar.hidden {
+    transform: translateX(111%);
+}
+.nav-btn {
+    flex: 1;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    color: #ffff;
+    background-color: rgba(109, 109, 109, 0.2);
+    backdrop-filter: blur(10px);
+    border: 0.1rem solid rgba(109, 109, 109, 0.2);
+    border-right: none;
+    border-radius: 0.25rem;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    z-index: 100;
+    transition: all 0.2s ease-in-out;
+}
+.nav-btn-container{
+    height: 100%;
+    width: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.575rem;
+}
+.nav-btn-text {
+    position: absolute;
+    transition: all 0.2s ease-in-out;
+    line-height: 1;
+    text-align: center;
+}
+.nav-btn-text.hidden {
+    opacity: 0;
+}
+#cruz{
+    font-size: 1.5rem;
+    line-height: 1rem;
+}
+#flecha {
+    font-size: 0.95rem;
+}
+.logo {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,34 +68,43 @@
     color: #fff;
     border: 0.1rem solid rgba(109, 109, 109, 0.2);
     border-radius: 50%;
+    border-left: 0.1rem dashed rgba(109, 109, 109, 0.2);
     border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
     background-color: rgba(109, 109, 109, 0.2);
     backdrop-filter: blur(10px);
     transition: all 0.2s ease-in-out;
 }
-.navbar a > svg{
+.logo > svg{
     height: 5.5rem;
     width: 5.5rem;
     padding: 0.5rem;
     cursor: pointer;
 }
-.navbar a svg > * {
+.logo svg > * {
     transition: all 0.2s ease-in-out;
 }
-.navbar a:hover {
-    scale: 1.025;
+.logo:hover {
     box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.2);
     background-color: rgba(237, 129, 23, 0.2);
     border: 0.1rem solid rgba(237, 129, 23, 0.2);
 }
-.navbar a:hover > svg #path-1 {
+.nav-btn:hover {
+    box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.2);
+    background-color: rgba(237, 129, 23, 0.2);
+    border: 0.1rem solid rgba(237, 129, 23, 0.2);
+    border-right: none;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+.logo:hover > svg #path-1 {
     fill: #40c351;
 }
-.navbar a:hover > svg #path-3 {
+.logo:hover > svg #path-3 {
     fill: #fff;
 }
 @media (max-width: 480px) {
-    .navbar a > svg{
+    .logo > svg{
         height: 4rem;
         width: 4rem;
     }
