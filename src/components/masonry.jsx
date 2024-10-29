@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import '../styles/masonry.css';
 
 const images = [
@@ -10,6 +10,8 @@ const images = [
     { src: '/portadas/portada04.jpg', alt: 'portada 4' },
     { src: '/portadas/portada22.jpg', alt: 'portada 22' },
     { src: '/portadas/portada23.jpg', alt: 'portada 23' },
+    { src: '/portadas/portada24.jpg', alt: 'portada 24' },
+    { src: '/portadas/portada26.jpg', alt: 'portada 26' },
     { src: '/portadas/portada03.jpg', alt: 'portada 3' },
     { src: '/portadas/portada09.jpg', alt: 'portada 9' },
     { src: '/portadas/portada10.jpg', alt: 'portada 10' },

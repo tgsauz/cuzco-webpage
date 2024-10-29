@@ -58,7 +58,8 @@
     text-shadow: 0 0 0.5rem rgb(237, 129, 23);
     background-color: rgba(237, 129, 23, 0.2); /* Semi-transparent white */
     box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.2);
-    transform: translateY(0.2rem);
+    border: 0.1rem solid rgba(237, 129, 23, 0.2);
+    transform: scale(1.025);
 }
 .contentwrapper {
     height: 100vh;
@@ -209,6 +210,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 20rem;
     font-family: 'Novecentowide-Normal', sans-serif;
     font-size: 1.5rem;
     color: #fff;
@@ -221,19 +223,29 @@
     border: 0.1rem solid rgba(109, 109, 109, 0.1);
     border-radius: 0.4rem;
     transition: all 0.2s ease-in-out;
+    animation: widthContract 0.2s ease-in-out forwards;
 }
 .salas button:hover, .estudio button:hover{
     text-shadow: 0 0 0.5rem rgb(237, 129, 23);
     box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.2);
-    transform: translateY(0.2rem);
+    border: 0.1rem solid rgba(237, 129, 23, 0.2);
+    transform: scale(1.025);
     background-color: rgba(237, 129, 23, 0.2); /* Semi-transparent white */
 }
 @keyframes widthExpand {
     0% {
-        width: 25%;
+        width: 20rem;
     }
     100% {
         width: 90%;
+    }
+}
+@keyframes widthContract {
+    0% {
+        width: 90%;
+    }
+    100% {
+        width: 20rem;
     }
 }
 .salas button.active, .estudio button.active{
@@ -332,11 +344,22 @@
     opacity: 0;
     transition: all 0.2s ease-in-out;
 }
-.secondrow img, .firstrow img, .firstcolumn img, .secondcolumn img{
+.secondrow img, .firstrow img, .firstcolumn img{
     width: 100%;
     height: auto;
-    max-height: 100%;
-    object-fit: cover !important;
+    max-height: 415px;
+    object-fit: cover;
+    border-radius: inherit;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    border: 0.15rem solid rgba(109, 109, 109, 0.25);
+    transition: all 0.2s ease-in-out;
+}
+.secondcolumn img{
+    width: 100%;
+    height: auto;
+    max-height: 830px;
+    object-fit: contain;
     border-radius: inherit;
     cursor: pointer;
     border-radius: 0.2rem;
@@ -402,8 +425,11 @@
     border-radius: 0.4rem;
     gap: 1rem;
 }
-.albums a:hover {  
+.albums a:hover {
+    transform: scale(1.025);  
     text-shadow: 0 0 0.5rem rgb(237, 129, 23);
+    box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.2);
+    border: 0.1rem solid rgba(237, 129, 23, 0.2);
     background-color: rgba(237, 129, 23, 0.2); /* Semi-transparent white */
 }
 .contact{
@@ -481,10 +507,14 @@
 .contact .list > li:hover > a > svg {
     text-shadow: 0 0 0.5rem rgb(237, 129, 23);
     background-color: rgba(237, 129, 23, 0.2); /* Semi-transparent white */
+    border: 0.1rem solid rgba(237, 129, 23, 0.2);
     box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.2);
-    transform: translateY(0.2rem);
+    scale: 1.05;
 }
 @media (max-width: 768px) {
+    .home-text > *{
+        font-size: 2.3rem;
+    }
     .galeria {
         flex-direction: column;
         width: calc(100% - 2rem);
@@ -581,7 +611,6 @@
 @media (max-width: 1280px) {
     .about > .contentwrapper{
         justify-content: space-evenly;
-        overflow-y: scroll;
         scrollbar-width: none;
         -ms-overfloy-style: none;
     }
