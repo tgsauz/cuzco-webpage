@@ -99,16 +99,16 @@
     }
     .close-btn{
       top: 0.75rem;
-      right: 0.75rem;
+      right: 2.5rem;
     }
     .maximized-img {
       height: auto;
-      width: 85%;
+      width: 80%;
     }
     .description {
       min-height: 20%;
       height: auto;
-      width: 85%;
+      width: 80%;
   
     }
   }
