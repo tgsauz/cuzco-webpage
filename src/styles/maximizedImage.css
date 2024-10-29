@@ -30,8 +30,10 @@
     width: 20%;
     margin: 1rem;
     padding: 0.5rem;
-    border: 0.2rem solid rgba(109, 109, 109, 0.1);
+    border: 0.1rem solid rgba(109, 109, 109, 0.2);
     border-radius: 1rem;
+    background-color: rgba(109, 109, 109, 0.2);
+    backdrop-filter: blur(10px);
   }
   .description-container {
     height: 100%;
@@ -39,6 +41,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    color: #ffff;
     gap: 1rem;
     font-family: 'Novecentowide-normal', sans-serif;
     font-size: 0.9rem;

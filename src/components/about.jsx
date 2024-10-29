@@ -32,16 +32,16 @@ const descriptionSalaB = (
         </div>
         <h4>24m2 - Luz natural diurna</h4>
         <ul>
-            <li><p>Bateria Pearl Export Red 5 cuerpos con fierros</p></li>
-            <li><p>Cabezal bajo Ampeg 4  SVTPro + Bafle Marshall (1x15"+ 4x10")</p></li>
-            <li><p>Amplificador p/guitarra Marshall JVM 210C - Valvular 100w (2x12")</p></li>
-            <li><p>Amplificador p/guitarra Mesa Nomade Fifty Five - Valvular 100w (2x12")</p></li>
-            <li><p>Bafles  JBL Eon (Parlante 15" - Biamplificado 300w Low + 100w Hi) (x2)</p></li>
-            <li><p>Consola Soundcraft EFX - (8 canales mono + 2 canales stereo) Efectos onboard</p></li>
-            <li><p>3 Microfonos Shure SM58</p></li>
-            <li><p>3 Pies guitarra/bajo Hercules</p></li>
-            <li><p>Afinador Korg</p></li>
-            <li><p>Cable en todos los equipos</p></li>
+            <li><p>Bateria Pearl Export Red 5 cuerpos con fierros.</p></li>
+            <li><p>Cabezal bajo Ampeg 4 SVTPro + Bafle Marshall (1x15"+ 4x10").</p></li>
+            <li><p>Amplificador p/guitarra Marshall JVM 210C - Valvular 100w (2x12").</p></li>
+            <li><p>Amplificador p/guitarra Mesa Nomade Fifty Five - Valvular 100w (2x12").</p></li>
+            <li><p>Bafles  JBL Eon (Parlante 15" - Biamplificado 300w Low + 100w Hi) (x2).</p></li>
+            <li><p>Consola Soundcraft EFX - (8 canales mono + 2 canales stereo) Efectos onboard.</p></li>
+            <li><p>3 Microfonos Shure SM58.</p></li>
+            <li><p>3 Pies guitarra/bajo Hercules.</p></li>
+            <li><p>Afinador Korg.</p></li>
+            <li><p>Cable en todos los equipos.</p></li>
         </ul>
     </div>
 );
@@ -54,17 +54,17 @@ const descriptionSalaC = (
         </div>
         <h4>16m2</h4>
         <ul>
-            <li><p>Bateria Pearl Export Red 5 cuerpos con fierros</p></li>
-            <li><p>Cabezal Hartke + Bafle Hartke (4x10") </p></li>
-            <li><p>Amplificador p/guitarra Marshall JVM 205C - Valvular 50w (2x12")</p></li>
-            <li><p>Amplificador p/guitarra Marshall Jcm 2000 - TSL601 - Valvular 60W (1x12")</p></li>
-            <li><p>Bafles activos Mackie SRM 450 (x2) (Biamplificado 300w Low + 100w Hi continuos)</p></li>
-            <li><p>Consola Soundcraft EFX - (8 canales mono + 2 canales stereo) </p></li>
-            <li><p>Procesador de efectos Peavey Dual Deltafex </p></li>
-            <li><p>2 Microfonos Shure SM58</p></li>
-            <li><p>3 Pies guitarra/bajo Hercules  </p></li>
-            <li><p>Afinador Korg</p></li>
-            <li><p>Cable en todos los equipos</p></li>
+            <li><p>Bateria Pearl Export Red 5 cuerpos con fierros.</p></li>
+            <li><p>Cabezal Hartke + Bafle Hartke (4x10").</p></li>
+            <li><p>Amplificador p/guitarra Marshall JVM 205C - Valvular 50w (2x12").</p></li>
+            <li><p>Amplificador p/guitarra Marshall Jcm 2000 - TSL601 - Valvular 60W (1x12").</p></li>
+            <li><p>Bafles activos Mackie SRM 450 (x2) (Biamplificado 300w Low + 100w Hi continuos).</p></li>
+            <li><p>Consola Soundcraft EFX - (8 canales mono + 2 canales stereo).</p></li>
+            <li><p>Procesador de efectos Peavey Dual Deltafex.</p></li>
+            <li><p>2 Microfonos Shure SM58.</p></li>
+            <li><p>3 Pies guitarra/bajo Hercules.</p></li>
+            <li><p>Afinador Korg.</p></li>
+            <li><p>Cable en todos los equipos.</p></li>
         </ul>
     </div>
 );
@@ -77,16 +77,16 @@ const descriptionSalaZ = (
         </div>
         <h4>15m2</h4>
         <ul>
-            <li><p>Bateria Pearl Export 5 cuerpos con Fierros</p></li>
-            <li><p>Cabezal bajo Aguilar Tonehammer 500 + Bafle Ampeg (4x10") </p></li>
-            <li><p>Amplificador p/guitarra Marshall DSL40C - Valvular 40w (1x12") </p></li>
-            <li><p>Amplificador p/guitarra Bugera Vintage V55 Infinium - Valvular 50w (1x12")  </p></li>
-            <li><p>Baffles (x2) DB Technologies Cromo 15 - 600w (15") </p></li>
-            <li><p>Consola Allen & Heat Zed 10fx (4 canales mono + 2 canales stereo) </p></li>
-            <li><p>2 Micrófonos Shure SM58</p></li>
-            <li><p>3 Pies guitarra/bajo Hercules</p></li>
-            <li><p>Afinador Korg</p></li>
-            <li><p>Cable en todos los equipos</p></li>
+            <li><p>Bateria Pearl Export 5 cuerpos con Fierros.</p></li>
+            <li><p>Cabezal bajo Aguilar Tonehammer 500 + Bafle Ampeg (4x10").</p></li>
+            <li><p>Amplificador p/guitarra Marshall DSL40C - Valvular 40w (1x12").</p></li>
+            <li><p>Amplificador p/guitarra Bugera Vintage V55 Infinium - Valvular 50w (1x12").</p></li>
+            <li><p>Baffles (x2) DB Technologies Cromo 15 - 600w (15").</p></li>
+            <li><p>Consola Allen & Heat Zed 10fx (4 canales mono + 2 canales stereo).</p></li>
+            <li><p>2 Micrófonos Shure SM58.</p></li>
+            <li><p>3 Pies guitarra/bajo Hercules.</p></li>
+            <li><p>Afinador Korg.</p></li>
+            <li><p>Cable en todos los equipos.</p></li>
         </ul>
     </div>
 );
