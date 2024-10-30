@@ -4,7 +4,7 @@ const Info = () => {
         <section className='info'>
         <section className='contentwrapper'>
             <div className='acercade'>
-                <p>Somos un espacio dedicado a la grabación y producción musical, con un ambiente cómodo y profesional donde los artistas pueden dar rienda suelta a su creatividad.</p>
+                <p>Un espacio dedicado a la grabación y producción musical, con un ambiente cómodo y profesional donde los artistas pueden dar rienda suelta a su creatividad.</p>
             </div>
             <div className='services'>
                 <ul>
