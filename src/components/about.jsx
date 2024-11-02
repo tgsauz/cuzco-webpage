@@ -1,6 +1,9 @@
-import React, { useCallback, useReducer } from 'react';
+import React from 'react';
+
+import '../styles/about.css'
 
 import ImgContainer from './imgContainer';
+import Slider from './slider';
 
 const descriptionSalaA = (
     <div className='description-container'>
@@ -101,52 +104,17 @@ const descriptionEstudio = (
     </div>
 );
 
-const initialState = {
-    sala: false,
-    estudio: false,
-    activeButton: null,
-};
-
-const reducer = (state, action) => {
-    switch (action.type) {
-        case 'TOGGLE_SALA':
-            return {
-                ...state,
-                sala: !state.sala,
-                estudio: false,
-                activeButton: state.activeButton === 'sala' ? null : 'sala'
-            };
-        case 'TOGGLE_ESTUDIO':
-            return { ...state,
-                estudio: !state.estudio,
-                sala: false,
-                activeButton: state.activeButton === 'estudio' ? null : 'estudio'
-            };
-        default:
-            return state;
-    }
-};
 const About = ({ onToggleMaximize }) => {
-
-    const [state, dispatch] = useReducer(reducer, initialState);
-
-    const handleButtonClick = useCallback((type) => {
-        dispatch({ type });
-    }, []);
-
 
     return (
         <section className='about'>
             <section className='contentwrapper'>
                 <div className='galeria'>
                     <div className='salas'>
-                        <button 
-                            className={state.activeButton === 'sala' ? 'active' : ''}
-                            onClick={() => handleButtonClick('TOGGLE_SALA')}
-                        >
+                        <h1 className='botonsala'>
                             Nuestras Salas
-                        </button>
-                        <section className={`direction ${state.sala ? 'expanded' : ''}`}>
+                        </h1>
+                        <section className='direction'>
                             <div className='firstrow'>
                                 <ImgContainer
                                     title='Sala A'
@@ -185,14 +153,14 @@ const About = ({ onToggleMaximize }) => {
                             </div>
                         </section>
                     </div>
+                    <div className='separator'/>
+                    <Slider/>
+                    <div className='separator'/>
                     <div className='estudio'>
-                        <button
-                            className={state.activeButton === 'estudio' ? 'active' : ''}
-                            onClick={() => handleButtonClick('TOGGLE_ESTUDIO')}
-                        >
+                        <h1 className='botonestudio'>
                             Nuestro Estudio
-                        </button>
-                        <section className={`direction ${state.estudio ? 'expanded' : ''}`}>
+                        </h1>
+                        <section className='direction'>
                             <div className='firstcolumn'>
                                 <ImgContainer
                                     title='Sala E'
@@ -227,7 +195,6 @@ const About = ({ onToggleMaximize }) => {
             </section>
             <h3>Todas nuestras salas cuentan con equipos de gama alta y acustica de clase A</h3>
         </section>
-    )
-}
-
+    );
+};
 export default About
