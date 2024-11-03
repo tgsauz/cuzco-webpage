@@ -6,9 +6,53 @@ const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
-    { id: 1, content: 'Slide 1' },
-    { id: 2, content: 'Slide 2' },
-    { id: 3, content: 'Slide 3' },
+    { id: 1, content: (
+      <a className='storelink' href='https://pedix.app/el-cuzco' target='_blank' rel='noopener noreferrer'>
+        <div className='slide-content'>
+          <div className='text'>
+            <h3>
+              Tienda Online
+            </h3>
+            <p>
+              ¡Mira todo nuestro catalogo de productos aca!
+            </p>
+          </div>
+          <img src='/background/bg01.jpg' />
+        </div>
+      </a>
+    ) },
+    { id: 2, content: (
+      <a className='link'>
+        <div className='slide-content'>
+          <div className='text'>
+            <h3>
+              ¡Graba tu multitrack!
+            </h3>
+            <p>
+              Necesitas grabar tu multitrack? Ponete en contacto con nostros
+            </p>
+          </div>
+          <img src='/background/bg04.jpg' />
+        </div>
+      
+      </a>
+    ) },
+    { id: 3, content: (
+      <a className='link'>
+        <div className='slide-content'>
+          <div className='text'>
+            <h3>
+              Promo X
+            </h3>
+            <p>
+              Tenemos oferta para grabacion multitrack por todo el mes de noviembre.
+            </p>
+          </div>
+          <img src='/background/bg02.jpg' />
+        </div>
+        
+      </a>
+    ) },
   ];
 
   const handleArrowClick = (direction) => {

@@ -49,6 +49,7 @@
     padding: 1rem;
     border-radius: 0.25rem;
     max-width: 100%;
+    text-shadow: 0.25rem 0.25rem 0.2rem rgba(0, 0, 0, 0.5);
 }
 .separator {
     width: calc(100% - 2.5rem);
