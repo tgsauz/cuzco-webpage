@@ -20,7 +20,6 @@ const images = [
     { src: '/portadas/portada13.jpg', alt: 'portada 13' },
     { src: '/portadas/portada14.jpg', alt: 'portada 14' },
     { src: '/portadas/portada15.jpg', alt: 'portada 15' },
-    { src: '/portadas/portada16.jpg', alt: 'portada 16' },
     { src: '/portadas/portada17.jpg', alt: 'portada 17' },
     { src: '/portadas/portada18.jpg', alt: 'portada 18' },
     { src: '/portadas/portada05.jpg', alt: 'portada 5' },

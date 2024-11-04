@@ -96,13 +96,96 @@ const descriptionSalaZ = (
 
 const descriptionSalaE = (
     <div className='description-container'>
+        <div>
+            <h3>Sala de grabación principal</h3>
+        </div>
+        <h4>32m2  - 92m3</h4>
+        <h4>(32 líneas balanceadas a CR + 2 líneas de cue stereo +  4 mono + circuito de video + circuitos 220v/110v estabilizados)</h4>
+        <h5>Microfonos:</h5>
+        <h6>Dinamicos:</h6>
+        <ul>
+            <li><p>AKG D112 </p></li>
+            <li><p>Electro-Voice RE-20</p></li>
+            <li><p>Electro-Voice DS35</p></li>
+            <li><p>Sennheiser MD421 II (x2)</p></li>
+            <li><p>Sennheiser MD 441-U</p></li>
+            <li><p>Sennheiser e 602 II</p></li>
+            <li><p>Shure Beta 52</p></li>
+            <li><p>Shure SM57 (x3)</p></li>
+            <li><p>Shure Beta 57 (x2)</p></li>
+            <li><p>Shure SM58 (x2)</p></li>
+        </ul>
+        <h6>Condensadores:</h6>
+        <ul>
+            <li><p>Neumann U-87</p></li>
+            <li><p>AKG 414 BXL-S-II (x2)(stereo apareados)</p></li>
+            <li><p>Audio-Technica 4050 (x2)</p></li>
+            <li><p>Neumann KM 184 ni</p></li>
+            <li><p>Shure SM81 (x2)</p></li>
+        </ul>
+        <h6>Electret:</h6>
+        <ul>
+            <li><p>PZM Crown</p></li>
+        </ul>
     </div>
 );
 
 const descriptionEstudio = (
     <div className='description-container'>
+        <div>
+            <h3>Sala de control (Control Room)</h3>
+        </div>
+        <h4>17m2 - 50m3</h4>
+        <h4>(circuito de 220v/110v estabilizados + circuito de video)</h4>
+        <h4>Control de maquinas (CMR):  2m2</h4>
+        <h5>Equipamiento:</h5>
+        <ul>
+            <li><p>Mixer API 1608 (16 mic inputs/ 24 line inputs - 12 EQ 550A + 4 EQ 560)</p></li>
+            <li><p>Manley VoxBox All tube mic pre/compressor/eq/de-esser</p></li>
+            <li><p>Preamp Portico 5012 dual, Rupert Neve Designs</p></li>
+            <li><p>Preamp Grace 801</p></li>
+            <li><p>Ecualizador Joe Meek VC5</p></li>
+            <li><p>Drawmer 1961 Tube Stereo EQ parametrico</p></li>
+            <li><p>Drawmer - 1960 dual Mic Pre/Vacuum Tube Compressor</p></li>
+            <li><p>Patchbay (x4) 384 puntos</p></li>
+        </ul>
+        <h5>Procesadores y efectos:</h5>
+        <ul>
+            <li><p>API 2500 Stereo Compressor</p></li>
+            <li><p>Compresor/Limitador mono JBL Urei 7110</p></li>
+            <li><p>Compresor Stereo Portico 5043 Rupert Neve Designs</p></li>
+            <li><p>Aural Exciter Type “C” Big Bottom Aphex System</p></li>
+            <li><p>Lexicon PCM 91</p></li>
+        </ul>
+        <h5>Monitores:</h5>
+        <ul>
+            <li><p>Genelec 1032 A</p></li>
+            <li><p>Yamaha NS10</p></li>
+            <li><p>Amplificador Crown D-75 A</p></li>
+        </ul>
+        <h5>DAW, Hardware  & Software:</h5>
+        <ul>
+            <li><p>Pro Tools HD3 (3 Placas DSP)</p></li>
+            <li><p>Interface Digidesign 192 I/O (8 In/ 16 Out)</p></li>
+            <li><p>Interface Digidesign 888 I/O (8 In/ 8 Out)</p></li>
+            <li><p>Pro Tools 10 HD - Version 10.3.9</p></li>
+            <li><p>Amplia variedad de Plug-ins & Instrumentos virtuales</p></li>
+        </ul>
     </div>
 );
+
+const descriptionSalaPrincipalEstudio = (
+    <div className='description-container'>
+        <div>
+            <h3>Sala de grabación principal</h3>
+        </div>
+        <h4>32m2  - 92m3</h4>
+        <h5>(32 líneas balanceadas a CR + 2 líneas de cue stereo +  4 mono + circuito de video + circuitos 220v/110v estabilizados)</h5>
+        <h4>Boot 1/Soundlock:  9m2 - 20m3</h4>
+        <h5>(4 lineas balanceadas a CR + 2 cue out +  1 speakon + 1 hi-z + circuito de video)</h5>
+        <h6>Aire Acondicionado. Renovación de aire mecánica. Distintas configuraciones de luces escenográficas y/o dimmerizables.</h6>
+    </div>
+)
 
 const About = ({ onToggleMaximize }) => {
 
@@ -163,29 +246,29 @@ const About = ({ onToggleMaximize }) => {
                         <section className='direction'>
                             <div className='firstcolumn'>
                                 <ImgContainer
-                                    title='Sala E'
-                                    text=''
-                                    image='/images/salaestudio.jpg'
-                                    maximizedImage='/images/salaestudio.jpg'
-                                    description={descriptionSalaE}
-                                    onToggleMaximize={onToggleMaximize}
-                                />
-                                <ImgContainer
-                                    title='Estudio'
+                                    title='Control room + gear'
                                     text=''
                                     image='/images/estudio.jpg'
                                     maximizedImage='/images/estudio.jpg'
                                     description={descriptionEstudio}
                                     onToggleMaximize={onToggleMaximize}
                                 />
+                                <ImgContainer
+                                    title='Rec Room + Mics'
+                                    text=''
+                                    image='/images/salae.jpg'
+                                    maximizedImage='/images/salae.jpg'
+                                    description={descriptionSalaE}
+                                    onToggleMaximize={onToggleMaximize}
+                                />
                             </div>
                             <div className='secondcolumn'>
                                 <ImgContainer
-                                    title='Sala E + Estudio'
+                                    title='Rec Room'
                                     text=''
                                     image='/images/salaestudio.jpg'
                                     maximizedImage='/images/salaestudio.jpg'
-                                    description=''
+                                    description={descriptionSalaPrincipalEstudio}
                                     onToggleMaximize={onToggleMaximize}
                                 />
                             </div>

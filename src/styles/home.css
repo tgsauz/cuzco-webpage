@@ -431,4 +431,7 @@
     .albums .musiclinks {
         flex-direction: row;
     }
-} 
+    .inicio h1 {
+        margin-bottom: 0;
+    }
+}   

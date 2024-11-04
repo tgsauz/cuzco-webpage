@@ -4,7 +4,7 @@ const Info = () => {
         <section className='info'>
         <section className='contentwrapper'>
             <div className='acercade'>
-                <p>Un espacio dedicado a la grabación y producción musical, con un ambiente cómodo y profesional donde los artistas pueden dar rienda suelta a su creatividad.</p>
+                <p>Un espacio dedicado a la grabación y producción musical, en un ambiente cómodo y profesional, donde vos como artista podes dar rienda suelta a tu creatividad</p>
             </div>
             <div className='services'>
                 <ul>
@@ -14,7 +14,7 @@ const Info = () => {
                     </li>
                     <li>
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ec8116" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-music"><path d="M9 18V5l12-2v13"></path><circle cx="6" cy="18" r="3"></circle><circle cx="18" cy="16" r="3"></circle></svg>
-                        <h5>Salas de Ensayo</h5><p>Alquiler por hora con equipamiento completo.</p>
+                        <h5>Salas de Ensayo</h5><p>Alquiler por hora con equipamiento completo</p>
                     </li>
                     <li>
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ec8116" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-shopping-cart"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
@@ -23,7 +23,7 @@ const Info = () => {
                 </ul>
             </div>
             <div className='intro-text'>
-                    <p>Nuestra misión es poner al alcance de artistas independientes las instalaciones, el equipamiento y el conocimiento para lograr un producto musical de alta calidad. </p>
+                    <p>Nuestra misión es poner al alcance de artistas independientes las instalaciones, el equipamiento y el conocimiento para lograr un producto musical de alta calidad</p>
             </div>
         </section>
     </section>

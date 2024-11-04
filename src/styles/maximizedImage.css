@@ -42,9 +42,9 @@
     justify-content: center;
     align-items: start;
     color: #ffff;
-    gap: 1rem;
+    gap: 10%;
     font-family: 'Novecentowide-normal', sans-serif;
-    font-size: 0.9rem;
+    font-size: 10%;
   }
   .description-container div {
     text-align: start;
@@ -56,7 +56,7 @@
   .description-container > ul {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 5%;
     list-style: none;
     flex-grow: 1;
   }
