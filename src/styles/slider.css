@@ -1,10 +1,11 @@
 .slider {
     position: relative;
-    width: calc(100% - 2.5rem);
+    width: 100%;
     height: 20rem;
     padding: 1rem;
     border: 0.15rem solid rgba(109, 109, 109, 0.25);
     background-color: rgba(109, 109, 109, 0.2);
+    border-radius: 0.4rem;
 }
 .slide {
     position: absolute;
@@ -22,29 +23,11 @@
     width: 100%;
     height: 100%;
 }
-.slide-content > .text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    color: #fff;
-    text-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.5);
-    padding: 1rem;
-    margin: 0.5rem;
-    background-color: rgba(109, 109, 109, 0.2);
-    backdrop-filter: blur(0.25rem);
-    border: 0.1rem solid rgba(109, 109, 109, 0.2);
-    border-radius: 0.25rem;
-    text-shadow: 0.25rem 0.25rem 0.2rem rgba(0, 0, 0, 0.5);
-    margin: 1rem;
-}
 .slide-content > img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 0.25rem;
 }
 .dots {
     position: absolute;
@@ -74,6 +57,7 @@
     position: absolute;
     top: 50%;
     left: 0;
+    transform: translateY(-50%);
     width: 100%;
     display: flex;
     flex-direction: row;

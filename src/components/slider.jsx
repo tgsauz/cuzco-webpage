@@ -1,56 +1,31 @@
-import React, { useState } from 'react';
-
+import React, { useEffect, useState } from 'react';
 import '../styles/slider.css';
 
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [intervalId, setIntervalId] = useState(null);
+  const [delayTriggered, setDelayTriggered] = useState(false);
 
   const slides = [
     { id: 1, content: (
       <a className='storelink' href='https://pedix.app/el-cuzco' target='_blank' rel='noopener noreferrer'>
         <div className='slide-content'>
-          <div className='text'>
-            <h3>
-              Tienda Online
-            </h3>
-            <p>
-              ¡Mira todo nuestro catalogo de productos aca!
-            </p>
-          </div>
-          <img src='/background/bg01.jpg' />
+          <img src='/background/bg01.jpg' alt='Slide 1' />
         </div>
       </a>
     ) },
     { id: 2, content: (
       <a className='link'>
         <div className='slide-content'>
-          <div className='text'>
-            <h3>
-              ¡Graba tu multitrack!
-            </h3>
-            <p>
-              Necesitas grabar tu multitrack? Ponete en contacto con nostros
-            </p>
-          </div>
-          <img src='/background/bg04.jpg' />
+          <img src='/background/bg04.jpg' alt='Slide 2' />
         </div>
-      
       </a>
     ) },
     { id: 3, content: (
       <a className='link'>
         <div className='slide-content'>
-          <div className='text'>
-            <h3>
-              Promo X
-            </h3>
-            <p>
-              Tenemos oferta para grabacion multitrack por todo el mes de noviembre.
-            </p>
-          </div>
-          <img src='/background/bg02.jpg' />
+          <img src='/background/bg02.jpg' alt='Slide 3' />
         </div>
-        
       </a>
     ) },
   ];
@@ -61,11 +36,42 @@ const Slider = () => {
     } else {
       setCurrentSlide((prevSlide) => (prevSlide === slides.length - 1 ? 0 : prevSlide + 1));
     }
+
+    clearInterval(intervalId);
+    setIntervalId(null);
+
+    if (!delayTriggered) {
+      setDelayTriggered(true);
+      const newIntervalId = setTimeout(() => {
+        const autoIntervalId = setInterval(() => {
+          setCurrentSlide((prevSlide) => (prevSlide === slides.length - 1 ? 0 : prevSlide + 1));
+        }, 5000);
+        setIntervalId(autoIntervalId);
+      }, 10000);
+      return () => clearTimeout(newIntervalId);
+    } else {
+      const autoIntervalId = setInterval(() => {
+        setCurrentSlide((prevSlide) => (prevSlide === slides.length - 1 ? 0 : prevSlide + 1));
+      }, 5000);
+      setIntervalId(autoIntervalId);
+    }
   };
 
   const handleDotClick = (index) => {
     setCurrentSlide(index);
+    clearInterval(intervalId);
+    setIntervalId(null);
   };
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide === slides.length - 1 ? 0 : prevSlide + 1));
+    }, 5000);
+
+    setIntervalId(intervalId);
+
+    return () => clearInterval(intervalId);
+  }, [slides.length]);
 
   return (
     <div className="slider">
@@ -80,7 +86,7 @@ const Slider = () => {
             key={slide.id}
             className={`dot ${currentSlide === index ? 'active' : ''}`}
             onClick={() => handleDotClick(index)}
-				  />
+          />
         ))}
       </div>
       <div className="arrows">

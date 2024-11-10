@@ -1,0 +1,89 @@
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(45, 51, 43, 1);
+}
+.info::after{
+    content: "";
+    width: 0;
+    height: 0;
+    transform: translateY(0.90rem);
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-width: 1rem 2rem 0 2rem;
+    border-color: rgba(45, 51, 43) transparent transparent transparent;
+    z-index: 10;
+}
+.info .contentwrapper {
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: start;
+}
+.info .acercade, .info .services, .info .intro-text {
+    width: 100%;
+    padding: 1rem;
+    border: 0.1rem solid rgba(109, 109, 109, 0.1);
+    backdrop-filter: blur(10px);
+    background-color: rgba(109, 109, 109, 0.1);;
+    border-radius: 0.4rem;
+    flex-grow: 0.15;
+}
+.info .acercade p {
+    font-family: 'Novecentowide-Normal', sans-serif;
+    font-size: clamp(1rem, 1.5rem, 2rem);
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info .services h4 {
+    font-family: 'Novecentowide-Bold', sans-serif;
+    text-decoration: underline;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+.info .services h5 {
+    font-family: 'Novecentowide-Light', sans-serif;
+    font-size: 1rem;
+    color: rgba(237, 129, 23);
+    text-shadow: 0 0 0.2rem rgba(237, 129, 23);
+    text-align: center;
+}
+.info .services p {
+    font-family: 'Novecentowide-Normal', sans-serif;
+    font-size: 0.80rem;
+    text-align: center;
+}
+.info .services ul {
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+.info .services ul li {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.info .services ul li svg{
+    padding: 0.5rem;
+    height: 3.5rem;
+    width: 3.5rem;
+}
+.intro-text p{
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    font-family: 'Novecentowide-Normal', sans-serif;
+    font-size: clamp(1rem, 1.5rem, 2rem);
+}

@@ -1,3 +1,9 @@
+import React from 'react';
+
+import Slider from './slider';
+
+import '../styles/info.css';
+
 const Info = () => {
 
     return (
@@ -25,6 +31,7 @@ const Info = () => {
             <div className='intro-text'>
                     <p>Nuestra misión es poner al alcance de artistas independientes las instalaciones, el equipamiento y el conocimiento para lograr un producto musical de alta calidad</p>
             </div>
+            <Slider/>
         </section>
     </section>
     )

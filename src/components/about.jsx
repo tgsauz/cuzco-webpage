@@ -236,9 +236,6 @@ const About = ({ onToggleMaximize }) => {
                             </div>
                         </section>
                     </div>
-                    <div className='separator'/>
-                    <Slider/>
-                    <div className='separator'/>
                     <div className='estudio'>
                         <h1 className='botonestudio'>
                             Nuestro Estudio

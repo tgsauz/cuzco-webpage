@@ -1,5 +1,7 @@
 import MasonryGallery from './masonry';
 
+import '../styles/albums.css';
+
 const Albums = () => {
 
     return (
