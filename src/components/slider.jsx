@@ -10,21 +10,21 @@ const Slider = () => {
     { id: 1, content: (
       <a className='storelink' href='https://pedix.app/el-cuzco' target='_blank' rel='noopener noreferrer'>
         <div className='slide-content'>
-          <img src='/background/bg01.jpg' alt='Slide 1' />
+          <img src='/gallery/slider1.jpg' alt='Slide 1' />
         </div>
       </a>
     ) },
     { id: 2, content: (
       <a className='link'>
         <div className='slide-content'>
-          <img src='/background/bg04.jpg' alt='Slide 2' />
+          <img src='/gallery/slider2.jpg' alt='Slide 2' />
         </div>
       </a>
     ) },
     { id: 3, content: (
       <a className='link'>
         <div className='slide-content'>
-          <img src='/background/bg02.jpg' alt='Slide 3' />
+          <img src='/gallery/slider3.jpg' alt='Slide 3' />
         </div>
       </a>
     ) },
