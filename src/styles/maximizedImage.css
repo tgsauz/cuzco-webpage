@@ -34,17 +34,18 @@
     border-radius: 1rem;
     background-color: rgba(109, 109, 109, 0.2);
     backdrop-filter: blur(10px);
+    overflow: auto;
   }
   .description-container {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: start;
     color: #ffff;
-    gap: 10%;
+    gap: clamp(0.5rem, 1rem, 2rem);
+    font-size: 1rem;
     font-family: 'Novecentowide-normal', sans-serif;
-    font-size: 10%;
   }
   .description-container div {
     text-align: start;
@@ -52,6 +53,19 @@
   }
   .description-container h4 {
     font-family: 'Novecentowide-Light', sans-serif;
+  }
+  .description-container h5 {
+    font-family: 'Novecentowide-Normal', sans-serif;
+    font-size: 1rem;
+    border-bottom: #ffff 0.1rem solid;
+  }
+  .description-container h6 {
+    font-family: 'Novecentowide-Bold', sans-serif;
+    font-size: 0.9rem;
+  }
+  .description-container p {
+    font-family: 'Novecentowide-Normal', sans-serif;
+    font-size: 0.8rem;
   }
   .description-container > ul {
     display: flex;
