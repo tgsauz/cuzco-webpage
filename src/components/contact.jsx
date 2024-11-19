@@ -13,14 +13,11 @@ const Contact = () => {
             </div>
             <div className='text'>
                 <span>
-                    <h2>ABIERTO 24hs</h2>
-                    <h2>TODOS LOS DIAS DEL AÑO</h2>
-                    <h3>FERIADOS INCLUSIVE</h3>
-                    <h3>(CON RESERVA PREVIA)</h3>    
+                    <h2>ABIERTO 24hs TODOS LOS DIAS DEL AÑO</h2>
+                    <h3>FERIADOS INCLUSIVE (CON RESERVA PREVIA)</h3>    
                 </span>
                 <span>
-                    <h3>Enterate de todas las novedades</h3>
-                    <h3> en nuestras redes sociales</h3>    
+                    <h3>Enterate de todas las novedades en nuestras redes sociales</h3>    
                 </span>
                 <ul className='list'>
                     <li><a href='https://www.instagram.com/elcuzcoestudio/' target='_blank' rel='noopener noreferrer'>

@@ -93,7 +93,7 @@
     }
     .contact .text span {
         display: flex;
-        flex-direction: row !important;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
@@ -137,6 +137,9 @@
     .albums  .contentwrapper h1 {
         font-size: 1.5rem;
     }
+    .musiclinks {
+        flex-direction: column !important;
+    }
     .musiclinks > a{
         height: 4rem;
         font-size: 0.75rem;
@@ -155,6 +158,9 @@
     }
     .contact .text > span > * {
         font-size: 1rem;
+    }
+    .contact .text > span:last-child{
+        flex-direction: column;
     }
     .contact .text > * {
         padding: 0.25rem !important;
