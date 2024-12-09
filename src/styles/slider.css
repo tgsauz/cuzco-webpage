@@ -6,7 +6,6 @@
     border: 0.15rem solid rgba(109, 109, 109, 0.25);
     background-color: rgba(109, 109, 109, 0.2);
     border-radius: 0.4rem;
-    outline: 2px solid red;;
 }
 .slide {
     position: absolute;
